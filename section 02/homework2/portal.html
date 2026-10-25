@@ -12,10 +12,9 @@
 </header>
 
 <main>
-    <section>
+    <section id="registration">
         <h2>Workshop Registration</h2>
-
-        <form>
+        <form action="/register"method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -59,10 +58,11 @@
 <button type="submit">Register</button>
         </form>
     </section>
-    <section>
+    <section id="schedule-matrix">
     <h2>Workshop Schedule</h2>
 
     <table border="1">
+        <caption>Workshop Schedule &amp;Track Pricing Matrix</caption>
         <thead>
             <tr>
                 <th>Time</th>
@@ -75,7 +75,7 @@
 
         <tbody>
             <tr>
-                <td>09:00 AM</td>
+                <th scope="row">09:00 AM</th>
                 <td>HTML Basics</td>
                 <td>Room 101</td>
                 <td>Sarah Johnson</td>
@@ -83,7 +83,7 @@
             </tr>
 
             <tr>
-                <td>10:30 AM</td>
+                <th scope="row">10:30 AM</th>
                 <td>CSS Fundamentals</td>
                 <td>Room 102</td>
                 <td>Alex Smith</td>
@@ -91,7 +91,7 @@
             </tr>
 
             <tr>
-                <td>12:00 PM</td>
+                <th scope="row">12:00 PM</th>
                 <td>JavaScript Introduction</td>
                 <td>Room 103</td>
                 <td>Emily Brown</td>
@@ -99,15 +99,23 @@
             </tr>
 
             <tr>
-                <td>02:00 PM</td>
+                <th scope="row">02:00 PM</th>
                 <td>Introduction to AI</td>
                 <td>Room 104</td>
                 <td>David Wilson</td>
                 <td>$35</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">All tickets include access to workshop materials and networking sessions.</td>
+            </tr>
+        </tfoot>
     </table>
 </section>
 </main>
+    <footer>
+        <p>&copy;2026 Global Developer Summit.All right reserved.</p>
+    </footer>
 </body>
 </html>
