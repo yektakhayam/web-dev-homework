@@ -13,6 +13,7 @@
   background-color: #f1f5f9;
   font-family: system-ui, -apple-system, sans-serif;
   color: #1e293b;
+      line-height:1.5;
   padding: 40px;
 }
 
@@ -32,7 +33,7 @@
    Look closely at the 2-line title in the browser! */
 .event-title {
   font-size: 26px;
-  line-height:20x; /* <-- What happens when font-size is bigger than line-height? */
+  line-height:1.4; /* <-- What happens when font-size is bigger than line-height? */
   margin-top: 12px;
   margin-bottom: 12px;
   color: #0f172a;
@@ -75,7 +76,7 @@
   padding: 12px;
   border: none;
   border-radius: 8px;
-  width 100%;
+  width: 100%;
 }
 .btn-primary:hover{
     background-color: #b91c1c;
