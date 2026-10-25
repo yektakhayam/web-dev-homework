@@ -1,0 +1,165 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  line-height: 1.5;
+  padding: 3rem 1rem;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  color: #f87171;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.section-header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  color: #94a3b8;
+  font-size: 1.05rem;
+}
+
+.pricing-card {
+  max-width: 460px;
+  margin: 0 auto;
+  background-color: #1e293b;
+  border: 2px solid #de3b3d;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.badge-featured {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1.25rem;
+  background-color: #de3b3d;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+}
+
+.pricing-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card > p:not(.billing-note):not(.guarantee-note) {
+  color: #cbd5e1;
+}
+
+.price-lockup {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.price-amount {
+  font-size: 3.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.price-period {
+  font-size: 1.125rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.billing-note {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
+.pricing-card hr {
+  border: none;
+  border-top: 1px solid #475569;
+  margin: 1.75rem 0;
+}
+
+.features-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0 0 2rem;
+}
+
+.features-list li {
+  margin-bottom: 0.85rem;
+  color: #e2e8f0;
+}
+
+.features-list li::first-letter {
+  color: #4ade80;
+}
+
+.btn-cta {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #de3b3d;
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-cta:hover {
+  background-color: #b91c1c;
+}
+
+.btn-cta:active {
+  transform: scale(0.98);
+}
+
+.guarantee-note {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 480px) {
+  .section-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .pricing-card {
+    padding: 2rem 1.25rem;
+  }
+}
