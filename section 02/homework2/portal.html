@@ -3,119 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop Portal</title>
+    <title>Global Developer Summit 2026</title>
 </head>
 <body>
-<header>
-    <h1>Workshop Portal</h1>
-    <p>Register for our upcoming workshops!</p>
-</header>
 
-<main>
-    <section id="registration">
-        <h2>Workshop Registration</h2>
-        <form action="/register"method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+    <header>
+        <h1>Global Developer Summit 2026</h1>
+        <p>Join us for an exciting developer summit!</p>
+    </header>
 
-            <br><br>
+    <main>
+        <section id="registration">
+            <h2>Workshop Registration</h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+            <form action="/register" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
 
-<label for="workshop">Choose a Workshop:</label>
-<select id="workshop" name="workshop" required>
-    <option value="">Select a workshop</option>
-    <option value="html">HTML Basics</option>
-    <option value="css">CSS Fundamentals</option>
-    <option value="javascript">JavaScript Introduction</option>
-    <option value="ai">Introduction to AI</option>
-</select>
+                <br><br>
 
-<br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-<p>Attendance Type:</p>
+                <br><br>
 
-<input type="radio" id="online" name="attendance" value="online" required>
-<label for="online">Online</label>
+                <label for="workshop">Choose a Workshop:</label>
+                <select id="workshop" name="workshop" required>
+                    <option value="">Select a workshop</option>
+                    <option value="html">HTML Basics</option>
+                    <option value="css">CSS Fundamentals</option>
+                    <option value="javascript">JavaScript Introduction</option>
+                    <option value="ai">Introduction to AI</option>
+                </select>
 
-<input type="radio" id="in-person" name="attendance" value="in-person">
-<label for="in-person">In Person</label>
-<br><br>
+                <br><br>
 
-<label for="comments">Additional Comments:</label>
-<br>
-<textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                <p>Attendance Type:</p>
 
-<br><br>
+                <input type="radio" id="online" name="attendance" value="online" required>
+                <label for="online">Online</label>
 
-<input type="checkbox" id="terms" name="terms" required>
-<label for="terms">I agree to the terms and conditions.</label>
+                <input type="radio" id="in-person" name="attendance" value="in-person">
+                <label for="in-person">In Person</label>
 
-<br><br>
+                <br><br>
 
-<button type="submit">Register</button>
-        </form>
-    </section>
-    <section id="schedule-matrix">
-    <h2>Workshop Schedule</h2>
+                <label for="comments">Additional Comments:</label>
+                <br>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
 
-    <table border="1">
-        <caption>Workshop Schedule &amp;Track Pricing Matrix</caption>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Workshop</th>
-                <th>Room</th>
-                <th>Instructor</th>
-                <th>Price</th>
-            </tr>
-        </thead>
+                <br><br>
 
-        <tbody>
-            <tr>
-                <th scope="row">09:00 AM</th>
-                <td>HTML Basics</td>
-                <td>Room 101</td>
-                <td>Sarah Johnson</td>
-                <td>$20</td>
-            </tr>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Code of Conduct.</label>
 
-            <tr>
-                <th scope="row">10:30 AM</th>
-                <td>CSS Fundamentals</td>
-                <td>Room 102</td>
-                <td>Alex Smith</td>
-                <td>$25</td>
-            </tr>
+                <br><br>
 
-            <tr>
-                <th scope="row">12:00 PM</th>
-                <td>JavaScript Introduction</td>
-                <td>Room 103</td>
-                <td>Emily Brown</td>
-                <td>$30</td>
-            </tr>
+                <button type="submit">Complete Registration</button>
+            </form>
+        </section>
 
-            <tr>
-                <th scope="row">02:00 PM</th>
-                <td>Introduction to AI</td>
-                <td>Room 104</td>
-                <td>David Wilson</td>
-                <td>$35</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="5">All tickets include access to workshop materials and networking sessions.</td>
-            </tr>
-        </tfoot>
-    </table>
-</section>
-</main>
+        <section id="schedule-matrix">
+            <h2>Workshop Matrix &amp; Pricing</h2>
+
+            <table border="1">
+                <caption>Workshop Schedule &amp; Track Pricing Matrix</caption>
+
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session Topic</th>
+                        <th>Room</th>
+                        <th>Instructor</th>
+                        <th>Pricing</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">09:00 AM</th>
+                        <td>HTML Basics</td>
+                        <td>Room 101</td>
+                        <td>Sarah Johnson</td>
+                        <td>$20</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">10:30 AM</th>
+                        <td>CSS Fundamentals</td>
+                        <td>Room 102</td>
+                        <td>Alex Smith</td>
+                        <td>$25</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">12:00 PM</th>
+                        <td>JavaScript Introduction</td>
+                        <td>Room 103</td>
+                        <td>Emily Brown</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">02:00 PM</th>
+                        <td>Introduction to AI</td>
+                        <td>Room 104</td>
+                        <td>David Wilson</td>
+                        <td>$35</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5">All tickets include access to workshop materials and networking sessions.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
     <footer>
-        <p>&copy;2026 Global Developer Summit.All right reserved.</p>
+        <p>&copy; 2026 Global Developer Summit. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
